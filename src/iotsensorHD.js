@@ -2,14 +2,14 @@ const mqtt = require('mqtt');
 const mongoose = require('mongoose');
 const SensorNew = require('./models/sensorNew');
 
-var plotly = require('plotly')("hozukimaru12","Rdris5w5eLKaGnHjUzNr")
+var plotly = require('plotly')("t","t")
 
 //Connect
-mongoose.connect('mongodb+srv://lachlan:Kingkong1@sit314.myekw.mongodb.net/SIT314?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://t:t1@t.myekw.mongodb.net/SIT314?retryWrites=true&w=majority')
 
 const client = mqtt.connect("mqtt://m13.cloudmqtt.com:16965", {
-    username: "oebptugj",
-    password: "yFtO2mJROP9s"
+    username: "t",
+    password: "t"
 });
 
 client.on('connect', () => {
